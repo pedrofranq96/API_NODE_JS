@@ -1,0 +1,99 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "teste servico",
+    "description": "alguma descricao 3",
+    "price": 1400,
+    "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png"
+}
+
+
+###
+
+GET http://localhost:3000/api/services
+
+###
+
+GET http://localhost:3000/api/services/6414ced33bd11caca31af7f1
+
+###
+DELETE  http://localhost:3000/api/services/6414d38b30830721800daf2c
+
+
+###
+
+PUT http://localhost:3000/api/services/6414cd53bd7013cd7667cb2b
+Content-Type: application/json
+
+{
+    "name": "teste servico 2",
+    "description": "alguma descricao edited",
+    "price": 2000,
+    "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png"
+}
+
+
+###
+
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "teste evento2",
+    "author": "pedro",
+    "description": "evento",
+    "budget": 8000,
+    "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png",
+    "services": [
+        {
+        "name": "teste servico 1",
+        "description": "alguma descricao 3",
+        "price": 3000,
+        "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png"
+        },
+        {
+        "name": "teste servico 2",
+        "description": "alguma descricao 3",
+        "price": 1600,
+        "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+
+GET http://localhost:3000/api/parties/6414dd5cdef9a54834905fcd
+
+###
+DELETE http://localhost:3000/api/parties/6414dd5cdef9a54834905fcd
+
+
+###
+PUT http://localhost:3000/api/parties/6414ddbfdef9a54834905fcf
+Content-Type: application/json
+
+{
+    "title": "teste evento editado",
+    "author": "pedro",
+    "description": "evento edited",
+    "budget": 10000,
+    "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png",
+    "services": [
+        {
+        "name": "teste servico 1",
+        "description": "alguma descricao 3",
+        "price": 3000,
+        "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png"
+        },
+        {
+        "name": "teste servico 2",
+        "description": "alguma descricao 3",
+        "price": 1600,
+        "image": "https://w7.pngwing.com/pngs/715/372/png-transparent-two-checked-flags-racing-flags-auto-racing-racing-flag-miscellaneous-game-flag-png-free-download.png"
+        }
+    ]
+}
